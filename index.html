@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Filter-page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main-section">
+        <div class="filter-section">
+            <div class="filter-by">filter by</div>
+            <div class="filter-titles" id="scroll-area">
+                <!-- --------------price range--------- -->
+                <div class="wrapper">
+                    <h4>Price Range</h4>
+
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                    </div>
+                    <div class="price-input">
+                        <div class="field">
+                            <span>Min</span>
+                            <input type="number" class="input-min" value="2500">
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                            <span>Max</span>
+                            <input type="number" class="input-max" value="7500">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- -----------------color---------------------- -->
+                <div class="color option-wrapper">
+                    <h4 class="title">Color</h4>
+                    <ul class="options color-list" id="default-color-options">
+                    </ul>
+                </div>
+
+                <div class="brand option-wrapper">
+                    <h4 class="title">Brand</h4>
+                    <ul class="options" id="default-brand-options">
+                    </ul>
+                </div>
+
+                <ul class="ram option-wrapper">
+                    <h4 class="title">RAM</h4>
+                    <div class="options" id="default-ram-options">
+                    </div>
+                </ul>
+
+
+                <ul class="storage option-wrapper">
+                    <h4 class="title">Storage</h4>
+                    <div class="options" id="default-storage-options">
+                    </div>
+                </ul>
+
+                <ul class="camera option-wrapper">
+                    <h4 class="title">Camera</h4>
+                    <div class="options" id="default-camera-options">
+                    </div>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="product-section" >
+            <div class="search-wrapper">
+                <div class="search">
+                    <input type="text" placeholder="search for product,brand and more" id="filterinput">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <section class="card-section" id="card-wrapper">
+                <!-- <div class="card" id="card-info">
+                </div> -->
+            </section>
+        </div>
+
+    </section>
+    <script src="myscript.js"></script>
+    <script src="testscript.js"></script>
+    <script>
+         
+    </script>
+
+</body>
+
+</html>
